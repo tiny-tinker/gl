@@ -20,6 +20,7 @@ import { useScroll } from 'react-router-scroll';
 import '!style-loader!css-loader!sanitize.css/sanitize.css';
 import '!style-loader!css-loader!bootstrap/dist/css/bootstrap.min.css';
 import '!style-loader!css-loader!global.css';
+import '!style-loader!css-loader!../assets/theme-dashboard/dist/toolkit-inverse.min.css';
 
 // Import selector for `syncHistoryWithStore`
 import { makeSelectLocationState } from 'containers/App/selectors';

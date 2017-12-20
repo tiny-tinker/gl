@@ -7,7 +7,7 @@
     "dialect": "mongodb",
     "host": "localhost",
     "port": 27017,
-    "database": "Turbulence",
+    "database": "gl",
     "username": "admin",
     "password": "password"
   },

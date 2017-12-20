@@ -22,7 +22,7 @@ class ConfirmAccountPage extends React.PureComponent { // eslint-disable-line re
       <div className="row">
         <div className="col-lg-5 col-md-7 mx-auto">
           <h3 className="text-center mb-3">Set your password</h3>
-          <p>Create your password and log in to your Turbulence account.</p>
+          <p>Create your password and log in to your Greenlines account.</p>
           <ConfirmAccountForm {...this.props} />
         </div>
       </div>

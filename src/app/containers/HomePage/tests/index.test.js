@@ -9,7 +9,7 @@ describe('<HomePage />', () => {
       <HomePage />
     );
     expect(renderedComponent.contains(
-      'Welcome to Turbulence'
+      'Welcome to Greenlines'
     )).toEqual(true);
   });
 });

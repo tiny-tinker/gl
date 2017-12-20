@@ -35,7 +35,7 @@ const AuthorizedNav = function AuthorizedNav({ user, logout }) {
 const HeaderComponent = function HeaderComponent({ user, logout }) {
   return (
     <nav className={`navbar navbar-toggleable-xl navbar-inverse fixed-top bg-inverse ${styles.header__nav}`}>
-      <IndexLink to="/" className="navbar-brand">Turbulence</IndexLink>
+      <IndexLink to="/" className="navbar-brand">Greenlines</IndexLink>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">&nbsp;</li>

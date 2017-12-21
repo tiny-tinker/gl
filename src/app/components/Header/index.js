@@ -5,12 +5,12 @@ import * as styles from './styles.css';
 const UnauthorizedNav = function UnauthorizedNav() {
   return (
     <ul className="navbar-nav">
-      <li className="nav-item">
+      <li className="lp">
         <button className="btn my-2" type="submit">
           <Link to="/login">Sign In</Link>
         </button>
       </li>
-      <li>
+      <li className="lp">
         <button className="btn my-2" type="submit">
           <Link to="/signup">Create Account</Link>
         </button>
@@ -34,11 +34,11 @@ const AuthorizedNav = function AuthorizedNav({ user, logout }) {
 
 const HeaderComponent = function HeaderComponent({ user, logout }) {
   return (
-    <nav className={`navbar navbar-toggleable-xl navbar-inverse fixed-top bg-inverse ${styles.header__nav}`}>
-      <IndexLink to="/" className="navbar-brand">Greenlines</IndexLink>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">&nbsp;</li>
+    <nav className={`ci ma yw mh pw app-navbar ${styles.header__nav}`}>
+      <IndexLink to="/" className="lv">Greenlines</IndexLink>
+      <div className="collapse lx" id="navbarCollapse">
+        <ul className="nav navbar-nav act">
+          <li className="lp active">&nbsp;</li>
         </ul>
         { user && user.isAuthorized ? <AuthorizedNav {...({ user, logout })} /> : <UnauthorizedNav /> }
       </div>

@@ -118,20 +118,22 @@ const User = {
       });
     }).then(({ email, isAuthorized, confirmAccountToken }) => {
       const options = {
+        service: config.get('mailer:service'),
         auth: {
-          api_key: config.get('mailer:sendGrid:api_key'),
+          user: 'flashingtinker@gmail.com',
+          pass: 'EliteTinker',
         },
       };
-      const client = nodemailer.createTransport(sgTransport(options));
+      const client = nodemailer.createTransport(options);
       const emailObj = {
         from: config.get('mailer:emailFrom'),
         to: email,
         subject: config.get('mailer:confirmAccountEmailSubject'),
-        text: `Thanks for signing up with Turbulence! You must follow this link to activate your account:\n\n
+        text: `Thanks for signing up with Greenlines! You must follow this link to activate your account:\n\n
           Please click on the following link, or paste this into your browser to complete the process:\n\n
           http://${req.headers.host}/account/accept/${confirmAccountToken}\n\n
           Have fun, and don't hesitate to contact us with your feedback.\n\n
-          The Turbulence Team\n`,
+          The Greenlines Team\n`,
       };
       return client.sendMail(emailObj, (err) => {
         if (err) return next(err);
@@ -163,12 +165,14 @@ const User = {
           return resolve(user);
         });
       })).then((user) => {
-        const options = {
-          auth: {
-            api_key: config.get('mailer:sendGrid:api_key'),
-          },
-        };
-        const client = nodemailer.createTransport(sgTransport(options));
+      const options = {
+        service: config.get('mailer:service'),
+        auth: {
+          user: 'flashingtinker@gmail.com',
+          pass: 'EliteTinker',
+        },
+      };
+        const client = nodemailer.createTransport(options);
         const email = {
           from: config.get('mailer:emailFrom'),
           to: user.email,
@@ -222,11 +226,13 @@ const User = {
       });
     }).then((user) => {
       const options = {
+        service: config.get('mailer:service'),
         auth: {
-          api_key: config.get('mailer:sendGrid:api_key'),
+          user: 'flashingtinker@gmail.com',
+          pass: 'EliteTinker',
         },
       };
-      const client = nodemailer.createTransport(sgTransport(options));
+      const client = nodemailer.createTransport(options);
       const email = {
         from: config.get('mailer:emailFrom'),
         to: user.email,

@@ -27,10 +27,10 @@
     },
     "service": "gmail",
     "auth" :{
-      "user" : "flashingtinker@gmail.com",
-      "pass" : "EliteTinker"
+      "user" : "pjsa85a@gmail.com",
+      "pass" : "Welcome01!"
     },
-    "emailFrom": "flashingtinker@gmail.com",
+    "emailFrom": "pjsa85a@gmail.com",
     "confirmAccountEmailSubject": "Confirm your account on Guidelines",
     "resetPasswordEmailSubject": "Guidelines Password Reset",
     "changePasswordEmailSubject": "Your password has been changed",

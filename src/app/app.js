@@ -17,7 +17,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { useScroll } from 'react-router-scroll';
 
 // styles imported globally without running through CSS Modules
-import 'style-loader!css-loader!!sass-loader!../assets/theme-dashboard/scss/toolkit-inverse.scss';
+import '!style-loader!css-loader!sass-loader!../assets/theme-dashboard/scss/toolkit-inverse.scss';
 import '!style-loader!css-loader!global.css';
 
 // Import selector for `syncHistoryWithStore`

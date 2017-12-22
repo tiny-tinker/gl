@@ -118,12 +118,14 @@ const User = {
       });
     }).then(({ email, isAuthorized, confirmAccountToken }) => {
       const options = {
-        service: config.get('mailer:service'),
+        host: config.get('mailer:host'),
+        port: config.get('mailer:port'),
         auth: {
-          user: 'flashingtinker@gmail.com',
-          pass: 'EliteTinker',
+          user: config.get('mailer:auth:user'),
+          pass: config.get('mailer:auth:pass'),
         },
       };
+      console.log(options);
       const client = nodemailer.createTransport(options);
       const emailObj = {
         from: config.get('mailer:emailFrom'),
@@ -165,13 +167,14 @@ const User = {
           return resolve(user);
         });
       })).then((user) => {
-      const options = {
-        service: config.get('mailer:service'),
-        auth: {
-          user: 'flashingtinker@gmail.com',
-          pass: 'EliteTinker',
-        },
-      };
+        const options = {
+          host: config.get('mailer:host'),
+          port: config.get('mailer:port'),
+          auth: {
+            user: config.get('mailer:auth:user'),
+            pass: config.get('mailer:auth:pass'),
+          },
+        };
         const client = nodemailer.createTransport(options);
         const email = {
           from: config.get('mailer:emailFrom'),
@@ -226,10 +229,11 @@ const User = {
       });
     }).then((user) => {
       const options = {
-        service: config.get('mailer:service'),
+        host: config.get('mailer:host'),
+        port: config.get('mailer:port'),
         auth: {
-          user: 'flashingtinker@gmail.com',
-          pass: 'EliteTinker',
+          user: config.get('mailer:auth:user'),
+          pass: config.get('mailer:auth:pass'),
         },
       };
       const client = nodemailer.createTransport(options);

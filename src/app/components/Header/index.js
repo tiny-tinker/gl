@@ -4,16 +4,12 @@ import * as styles from './styles.css';
 
 const UnauthorizedNav = function UnauthorizedNav() {
   return (
-    <ul className="navbar-nav">
+    <ul className="nav navbar-nav">
       <li className="lp">
-        <button className="btn my-2" type="submit">
-          <Link to="/login">Sign In</Link>
-        </button>
+        <Link to="/login">Sign In</Link>
       </li>
       <li className="lp">
-        <button className="btn my-2" type="submit">
-          <Link to="/signup">Create Account</Link>
-        </button>
+        <Link to="/signup">Create Account</Link>
       </li>
     </ul>
   );
@@ -21,11 +17,11 @@ const UnauthorizedNav = function UnauthorizedNav() {
 
 const AuthorizedNav = function AuthorizedNav({ user, logout }) {
   return (
-    <ul className="navbar-nav">
-      <li className="nav-item mr-4">
+    <ul className="nav navbar-nav">
+      <li className="lp">
         <div className={styles.greeting}>Signed in as <b className="text-capitalize">{user.firstName}</b></div>
       </li>
-      <li className="nav-item">
+      <li className="lp">
         <button onClick={logout} className={styles.logout}>Logout</button>
       </li>
     </ul>

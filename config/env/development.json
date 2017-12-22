@@ -25,12 +25,13 @@
     "sendGrid": {
       "api_key": "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"
     },
-    "service": "gmail",
+    "host": "mail.smtp2go.com",
     "auth" :{
-      "user" : "pjsa85a@gmail.com",
-      "pass" : "Welcome01!"
+      "user" : "andrew@andrewsaxe.com",
+      "pass" : "SUS3y39vCTvB"
     },
-    "emailFrom": "Greenlines",
+    "port": 2525,
+    "emailFrom": "andrew@andrewsaxe.com",
     "confirmAccountEmailSubject": "Confirm your account on Guidelines",
     "resetPasswordEmailSubject": "Guidelines Password Reset",
     "changePasswordEmailSubject": "Your password has been changed",

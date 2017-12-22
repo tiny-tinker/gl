@@ -31,7 +31,7 @@
       "pass" : "SUS3y39vCTvB"
     },
     "port": 2525,
-    "emailFrom": "Greenlines",
+    "emailFrom": "andrew@andrewsaxe.com",
     "confirmAccountEmailSubject": "Confirm your account on Guidelines",
     "resetPasswordEmailSubject": "Guidelines Password Reset",
     "changePasswordEmailSubject": "Your password has been changed",
